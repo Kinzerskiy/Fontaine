@@ -23,14 +23,12 @@ class CodeValidViewController: UIViewController {
     func setupConfig() {
         checkCodeButton.isEnabled = false
         checkCodeButton.layer.cornerRadius = 12
+        codeTextView.clipsToBounds = true
+        codeTextView.layer.cornerRadius = 12
         codeTextView.delegate = self
     }
     
-    func showContentVC() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dvc = storyboard.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
-        self.present(dvc, animated: true)
-    }
+    
     
     @IBAction func checkCodeAction(_ sender: UIButton) {
         guard let code = codeTextView.text else { return }
@@ -39,15 +37,28 @@ class CodeValidViewController: UIViewController {
             withVerificationID: verificationID,
             verificationCode: code)
         
-        Auth.auth().signIn(with: credential) { _, error in
+        Auth.auth().signIn(with: credential) { [weak self] _, error in
             if error != nil {
                 let alert = UIAlertController(title: error?.localizedDescription, message: nil, preferredStyle: .alert)
                 let cancel = UIAlertAction(title: "Okey", style: .cancel)
                 alert.addAction(cancel)
-                self.present(alert, animated: true)
+                self?.present(alert, animated: true)
                 
             } else {
-                self.showContentVC()
+                let userManager = UserManager()
+                guard let currentUser = Auth.auth().currentUser else { return }
+                
+                userManager.checkIfUserExist(userId: currentUser.uid) { isExist in
+                    if isExist {
+                        self?.performSegue(withIdentifier: "productSegue", sender: nil)
+                    } else {
+                        let user = User(uuid: currentUser.uid, phoneNumber: nil, fullName: nil, address: nil, imageUrl: nil)
+                        userManager.saveUserFields(user: user) { [weak self] in
+                            self?.performSegue(withIdentifier: "fromCodeToProfileFields", sender: nil)
+                        }
+                    }
+                }
+                
             }
         }
     }

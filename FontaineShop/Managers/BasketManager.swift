@@ -6,18 +6,19 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
 class BasketManager {
     
     static let shared = BasketManager()
     
     private var products: [BasketProduct] = []
-    
     private init() {}
+    
     
     func add(product: Product) {
         let index = products.firstIndex { basketProduct in
-            basketProduct.product.uuId == product.uuId
+            basketProduct.product.uuid == product.uuid
         }
         if let  index = index {
             products[index].count += 1

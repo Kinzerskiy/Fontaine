@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class WelcomeViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class WelcomeViewController: UIViewController {
         titleLabel.text = ""
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         var charIndex = 0.0
         let titleText = "FONTAINE"
@@ -27,8 +29,18 @@ class WelcomeViewController: UIViewController {
             charIndex += 1
         }
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
-            self.performSegue(withIdentifier: "welcomeSegue", sender: self)
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (user) in
+        
+        let userManager = UserManager()
+        guard let currentUser = Auth.auth().currentUser else { return }
+        
+        userManager.checkIfUserExist(userId: currentUser.uid) { isExist in
+            if isExist {
+                self.performSegue(withIdentifier: "fromWelcomeToProduct", sender: self)
+            } else {
+                self.performSegue(withIdentifier: "welcomeSegue", sender: self)
+            }
         }
     }
+}
 }

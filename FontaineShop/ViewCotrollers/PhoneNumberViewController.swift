@@ -26,6 +26,7 @@ class PhoneNumberViewController: UIViewController {
     }
     
     func setupConfig() {
+        navigationController?.isNavigationBarHidden = true
         verifyButton.isEnabled = false
         verifyButton.layer.cornerRadius = 12
         
@@ -34,16 +35,17 @@ class PhoneNumberViewController: UIViewController {
         
         listController = FPNCountryListViewController(style: .grouped)
         listController?.setup(repository: phoneTextField.countryRepository)
+        
         listController.didSelect = { country in
             self.phoneTextField.setFlag(countryCode: country.code)
         }
     }
     
-    func showCodeValidVC(verificationID: String) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dvc = storyboard.instantiateViewController(withIdentifier: "CodeValidViewController") as! CodeValidViewController
-        dvc.verificationID = verificationID
-        self.present(dvc, animated: true)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CodeValidViewController,
+        let verificationID = sender as? String {
+            vc.verificationID = verificationID
+        }
     }
     
     @IBAction func verifyPhone(_ sender: UIButton) {
@@ -55,10 +57,13 @@ class PhoneNumberViewController: UIViewController {
                 if error != nil {
                     print(error?.localizedDescription ?? "is empty")
                 } else {
-                    self.showCodeValidVC(verificationID: verificationID ?? "is empty") 
+                    guard let verificationID = verificationID else { return }
+                    self.performSegue(withIdentifier: "validCode", sender: verificationID)
                 }
             }
     }
+    
+    @IBAction func unwindToFirstScreen(_ segue: UIStoryboardSegue) {}
 }
 
 extension PhoneNumberViewController: FPNTextFieldDelegate {

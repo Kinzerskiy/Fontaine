@@ -7,23 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C359A0B296837300047939C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A0A296837300047939C /* WelcomeViewController.swift */; };
+		0C359A102968580F0047939C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A0F2968580E0047939C /* UserManager.swift */; };
+		0C359A132968587B0047939C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A122968587A0047939C /* User.swift */; };
+		0C56A2FA296627F900800869 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C56A2F9296627F900800869 /* GoogleService-Info.plist */; };
+		0C56A2FC29662D5F00800869 /* CodeValidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56A2FB29662D5F00800869 /* CodeValidViewController.swift */; };
+		0C8AF6BC296F091500E5B872 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BA296F091400E5B872 /* ProductCollectionViewCell.swift */; };
+		0C8AF6BD296F091500E5B872 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BB296F091500E5B872 /* ProductCollectionViewCell.xib */; };
+		0C8AF6BF296F094100E5B872 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BE296F094100E5B872 /* ProductViewController.swift */; };
+		0C8AF6C1296F0CD200E5B872 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C0296F0CD200E5B872 /* Product.swift */; };
+		0C8AF6C4296F0F3800E5B872 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C2296F0F3800E5B872 /* BasketTableViewCell.swift */; };
+		0C8AF6C5296F0F3800E5B872 /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C3296F0F3800E5B872 /* BasketTableViewCell.xib */; };
+		0C8AF6C7296F116500E5B872 /* BasketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C6296F116500E5B872 /* BasketManager.swift */; };
+		0C8AF6C9296F11C200E5B872 /* BasketProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */; };
+		0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */; };
+		0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAD6AB2976926A00536B91 /* FileManager.swift */; };
 		0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A12965B9CF000D379A /* AppDelegate.swift */; };
 		0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A32965B9CF000D379A /* SceneDelegate.swift */; };
-		0CCDD3A62965B9CF000D379A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A52965B9CF000D379A /* ViewController.swift */; };
+		0CCDD3A62965B9CF000D379A /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A52965B9CF000D379A /* PhoneNumberViewController.swift */; };
 		0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A72965B9CF000D379A /* Main.storyboard */; };
 		0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3AA2965B9D2000D379A /* Assets.xcassets */; };
 		0CCDD3AE2965B9D2000D379A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3AC2965B9D2000D379A /* LaunchScreen.storyboard */; };
+		0CE9A6A12972D54F000B4FF0 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */; };
+		0CF2985C2975D350008FE999 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2985B2975D350008FE999 /* UserProfileViewController.swift */; };
+		13B474935D6CC7679C030267 /* Pods_FontaineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09FAFB6B8152DF43A0FDDD11 /* Pods-FontaineShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontaineShop.release.xcconfig"; path = "Target Support Files/Pods-FontaineShop/Pods-FontaineShop.release.xcconfig"; sourceTree = "<group>"; };
+		0C359A0A296837300047939C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		0C359A0F2968580E0047939C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0C359A122968587A0047939C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0C56A2F9296627F900800869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C56A2FB29662D5F00800869 /* CodeValidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeValidViewController.swift; sourceTree = "<group>"; };
+		0C8AF6BA296F091400E5B872 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C8AF6BB296F091500E5B872 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		0C8AF6BE296F094100E5B872 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductViewController.swift; path = /Users/anton1/Desktop/copy/FontaineShop/FontaineShop/ViewCotrollers/ProductViewController.swift; sourceTree = "<absolute>"; };
+		0C8AF6C0296F0CD200E5B872 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0C8AF6C2296F0F3800E5B872 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		0C8AF6C3296F0F3800E5B872 /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
+		0C8AF6C6296F116500E5B872 /* BasketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketManager.swift; sourceTree = "<group>"; };
+		0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketProduct.swift; sourceTree = "<group>"; };
+		0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		0CAAD6AB2976926A00536B91 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		0CCDD39E2965B9CF000D379A /* FontaineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontaineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCDD3A12965B9CF000D379A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CCDD3A32965B9CF000D379A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CCDD3A52965B9CF000D379A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CCDD3A52965B9CF000D379A /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		0CCDD3A82965B9CF000D379A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CCDD3AA2965B9D2000D379A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CCDD3AD2965B9D2000D379A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CCDD3AF2965B9D2000D379A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		0CF2985B2975D350008FE999 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		8DF34CC6FCBE2340DE6EB833 /* Pods-FontaineShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontaineShop.debug.xcconfig"; path = "Target Support Files/Pods-FontaineShop/Pods-FontaineShop.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontaineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B474935D6CC7679C030267 /* Pods_FontaineShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C359A0D296857E80047939C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0C359A0F2968580E0047939C /* UserManager.swift */,
+				0C8AF6C6296F116500E5B872 /* BasketManager.swift */,
+				0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */,
+				0CAAD6AB2976926A00536B91 /* FileManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0C359A112968585F0047939C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C359A122968587A0047939C /* User.swift */,
+				0C8AF6C0296F0CD200E5B872 /* Product.swift */,
+				0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C56A2FD29662DB100800869 /* ViewCotrollers */ = {
+			isa = PBXGroup;
+			children = (
+				0C359A0A296837300047939C /* WelcomeViewController.swift */,
+				0CCDD3A52965B9CF000D379A /* PhoneNumberViewController.swift */,
+				0C56A2FB29662D5F00800869 /* CodeValidViewController.swift */,
+				0C8AF6BE296F094100E5B872 /* ProductViewController.swift */,
+				0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */,
+				0CF2985B2975D350008FE999 /* UserProfileViewController.swift */,
+			);
+			path = ViewCotrollers;
+			sourceTree = "<group>";
+		};
+		0C8AF6B3296F070500E5B872 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AF6BA296F091400E5B872 /* ProductCollectionViewCell.swift */,
+				0C8AF6BB296F091500E5B872 /* ProductCollectionViewCell.xib */,
+				0C8AF6C2296F0F3800E5B872 /* BasketTableViewCell.swift */,
+				0C8AF6C3296F0F3800E5B872 /* BasketTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		0CCDD3952965B9CF000D379A = {
 			isa = PBXGroup;
 			children = (
 				0CCDD3A02965B9CF000D379A /* FontaineShop */,
 				0CCDD39F2965B9CF000D379A /* Products */,
+				10FEE92B64AE848D61B57A18 /* Pods */,
+				A7D121289F3E9305F6C80AD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +142,36 @@
 		0CCDD3A02965B9CF000D379A /* FontaineShop */ = {
 			isa = PBXGroup;
 			children = (
+				0C8AF6B3296F070500E5B872 /* Cells */,
+				0C359A112968585F0047939C /* Models */,
+				0C359A0D296857E80047939C /* Managers */,
+				0C56A2FD29662DB100800869 /* ViewCotrollers */,
 				0CCDD3A12965B9CF000D379A /* AppDelegate.swift */,
 				0CCDD3A32965B9CF000D379A /* SceneDelegate.swift */,
-				0CCDD3A52965B9CF000D379A /* ViewController.swift */,
 				0CCDD3A72965B9CF000D379A /* Main.storyboard */,
 				0CCDD3AA2965B9D2000D379A /* Assets.xcassets */,
 				0CCDD3AC2965B9D2000D379A /* LaunchScreen.storyboard */,
+				0C56A2F9296627F900800869 /* GoogleService-Info.plist */,
 				0CCDD3AF2965B9D2000D379A /* Info.plist */,
 			);
 			path = FontaineShop;
+			sourceTree = "<group>";
+		};
+		10FEE92B64AE848D61B57A18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DF34CC6FCBE2340DE6EB833 /* Pods-FontaineShop.debug.xcconfig */,
+				09FAFB6B8152DF43A0FDDD11 /* Pods-FontaineShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7D121289F3E9305F6C80AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CCDD3B22965B9D2000D379A /* Build configuration list for PBXNativeTarget "FontaineShop" */;
 			buildPhases = (
+				DD5F516F7B70F44E83F2A5E3 /* [CP] Check Pods Manifest.lock */,
 				0CCDD39A2965B9CF000D379A /* Sources */,
 				0CCDD39B2965B9CF000D379A /* Frameworks */,
 				0CCDD39C2965B9CF000D379A /* Resources */,
+				13834589B300E890E82D80BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CCDD3AE2965B9D2000D379A /* LaunchScreen.storyboard in Resources */,
+				0C56A2FA296627F900800869 /* GoogleService-Info.plist in Resources */,
+				0C8AF6BD296F091500E5B872 /* ProductCollectionViewCell.xib in Resources */,
+				0C8AF6C5296F0F3800E5B872 /* BasketTableViewCell.xib in Resources */,
 				0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */,
 				0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */,
 			);
@@ -133,13 +245,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13834589B300E890E82D80BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FontaineShop/Pods-FontaineShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FontaineShop/Pods-FontaineShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FontaineShop/Pods-FontaineShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5F516F7B70F44E83F2A5E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FontaineShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CCDD39A2965B9CF000D379A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CCDD3A62965B9CF000D379A /* ViewController.swift in Sources */,
+				0C8AF6C9296F11C200E5B872 /* BasketProduct.swift in Sources */,
+				0C8AF6C7296F116500E5B872 /* BasketManager.swift in Sources */,
+				0CCDD3A62965B9CF000D379A /* PhoneNumberViewController.swift in Sources */,
+				0C8AF6C4296F0F3800E5B872 /* BasketTableViewCell.swift in Sources */,
+				0C8AF6BC296F091500E5B872 /* ProductCollectionViewCell.swift in Sources */,
+				0CF2985C2975D350008FE999 /* UserProfileViewController.swift in Sources */,
+				0C8AF6BF296F094100E5B872 /* ProductViewController.swift in Sources */,
+				0C359A102968580F0047939C /* UserManager.swift in Sources */,
+				0C8AF6C1296F0CD200E5B872 /* Product.swift in Sources */,
 				0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */,
+				0C359A132968587B0047939C /* User.swift in Sources */,
+				0CE9A6A12972D54F000B4FF0 /* ProductManager.swift in Sources */,
+				0C359A0B296837300047939C /* WelcomeViewController.swift in Sources */,
+				0C56A2FC29662D5F00800869 /* CodeValidViewController.swift in Sources */,
+				0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */,
+				0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */,
 				0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +450,7 @@
 		};
 		0CCDD3B32965B9D2000D379A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF34CC6FCBE2340DE6EB833 /* Pods-FontaineShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +479,7 @@
 		};
 		0CCDD3B42965B9D2000D379A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09FAFB6B8152DF43A0FDDD11 /* Pods-FontaineShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
