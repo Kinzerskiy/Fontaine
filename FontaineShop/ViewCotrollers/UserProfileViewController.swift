@@ -24,15 +24,8 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        prepareUI()
         loadData()
     }
-    
-//    func prepareUI() {
-////        userPhoto.contentMode = .scaleAspectFit
-////        phoneNumberLabel.isHidden = true
-////        nameLabelInfo.isHidden = true
-//    }
     
     func loadData() {
         let userManager = UserManager()
@@ -45,14 +38,8 @@ class UserProfileViewController: UIViewController {
     }
     
     func updateUI() {
-        self.navigationItem.setHidesBackButton(true, animated: true)
-//        self.phoneNumberLabel.text = user?.phoneNumber
-//        self.nameLabelInfo.text = user?.fullName
-//        self.adressLabelInfo.text = user?.address
-        
         guard let imageUrl = user?.imageUrl, let source = URL.init(string: imageUrl) else { return }
         userPhoto.kf.setImage(with: source)
-       
     }
     
     @IBAction func didTapButton(_ sender: UIBarButtonItem) {

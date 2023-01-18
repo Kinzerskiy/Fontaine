@@ -18,11 +18,13 @@ class CodeValidViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConfig()
+        navigationItem.setHidesBackButton(true, animated: true)
     }
     
     func setupConfig() {
         checkCodeButton.isEnabled = false
         checkCodeButton.layer.cornerRadius = 12
+        
         codeTextView.clipsToBounds = true
         codeTextView.layer.cornerRadius = 12
         codeTextView.delegate = self

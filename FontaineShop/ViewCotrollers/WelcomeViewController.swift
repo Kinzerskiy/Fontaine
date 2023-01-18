@@ -29,16 +29,16 @@ class WelcomeViewController: UIViewController {
             charIndex += 1
         }
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (user) in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] (user) in
         
         let userManager = UserManager()
         guard let currentUser = Auth.auth().currentUser else { return }
         
         userManager.checkIfUserExist(userId: currentUser.uid) { isExist in
             if isExist {
-                self.performSegue(withIdentifier: "fromWelcomeToProduct", sender: self)
+                self?.performSegue(withIdentifier: "fromWelcomeToProduct", sender: self)
             } else {
-                self.performSegue(withIdentifier: "welcomeSegue", sender: self)
+                self?.performSegue(withIdentifier: "welcomeSegue", sender: self)
             }
         }
     }

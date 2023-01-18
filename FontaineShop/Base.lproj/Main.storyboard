@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-MI-eRl">
-                                <rect key="frame" x="10" y="399.5" width="150" height="21"/>
+                                <rect key="frame" x="10" y="396" width="150" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gYB-GY-9Ok" firstAttribute="top" secondItem="qQY-MI-eRl" secondAttribute="bottom" constant="5" id="194-w6-fNM"/>
+                            <constraint firstItem="gYB-GY-9Ok" firstAttribute="top" secondItem="qQY-MI-eRl" secondAttribute="bottom" constant="8" symbolic="YES" id="194-w6-fNM"/>
                             <constraint firstItem="FYH-NY-FU0" firstAttribute="top" secondItem="gYB-GY-9Ok" secondAttribute="bottom" constant="150" id="3Gb-ZF-MdI"/>
                             <constraint firstItem="gYB-GY-9Ok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="84V-Zo-1dC"/>
                             <constraint firstItem="FYH-NY-FU0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="J6T-DT-Fe2"/>
@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="-1422" y="98"/>
         </scene>
-        <!--Code Valid View Controller-->
+        <!--Fontaine-->
         <scene sceneID="6cJ-QK-VcK">
             <objects>
                 <viewController storyboardIdentifier="CodeValidViewController" modalPresentationStyle="overFullScreen" id="bGU-YC-lX0" customClass="CodeValidViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                                     <action selector="checkCodeAction:" destination="bGU-YC-lX0" eventType="touchUpInside" id="dUR-Vc-9ZS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-ya-Ipt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="20" maximumZoomScale="20" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-ya-Ipt">
                                 <rect key="frame" x="10" y="425.5" width="394" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -148,7 +148,7 @@
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad" returnKeyType="continue" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="continue" textContentType="one-time-code"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-Kw-uwh">
                                 <rect key="frame" x="10" y="399.5" width="117" height="21"/>
@@ -171,7 +171,7 @@
                             <constraint firstItem="v9B-7p-2aj" firstAttribute="trailing" secondItem="RWM-ya-Ipt" secondAttribute="trailing" constant="10" id="uab-Gh-ePR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="afA-4D-2lr"/>
+                    <navigationItem key="navigationItem" title="Fontaine" id="afA-4D-2lr"/>
                     <connections>
                         <outlet property="checkCodeButton" destination="wT4-g1-r1X" id="IWE-Kq-agG"/>
                         <outlet property="codeTextView" destination="RWM-ya-Ipt" id="7w6-qr-5n6"/>
@@ -183,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="964" y="98"/>
         </scene>
-        <!--Product View Controller-->
+        <!--Fontaine-->
         <scene sceneID="O6A-7T-YtJ">
             <objects>
                 <viewController id="xQl-1t-PFA" customClass="ProductViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,7 +224,9 @@
                             <constraint firstItem="cok-xO-7FJ" firstAttribute="bottom" secondItem="eEH-Rj-N2J" secondAttribute="bottom" id="qx0-Nb-56A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Nvq-y0-0fB"/>
+                    <navigationItem key="navigationItem" title="Fontaine" id="Nvq-y0-0fB">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AMp-Xn-tip"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="productCollectionView" destination="nXo-qK-AkE" id="vuH-mj-Zzg"/>
                         <segue destination="bEa-1v-IAO" kind="show" identifier="fromProductToBusket" id="1s3-cx-l0E"/>
@@ -269,7 +271,7 @@
                             <constraint firstItem="x13-uT-SU1" firstAttribute="top" secondItem="l1R-cN-UpP" secondAttribute="bottom" id="tZ5-9f-7EO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="e4P-0N-APl"/>
+                    <navigationItem key="navigationItem" id="e4P-0N-APl"/>
                     <connections>
                         <outlet property="basketTableView" destination="l1R-cN-UpP" id="zMt-qf-ebq"/>
                         <outlet property="placeOrderButton" destination="x13-uT-SU1" id="w64-SF-3wg"/>
@@ -279,7 +281,7 @@
             </objects>
             <point key="canvasLocation" x="2819" y="445"/>
         </scene>
-        <!--User Profile View Controller-->
+        <!--Fontaine-->
         <scene sceneID="AOn-BB-yaN">
             <objects>
                 <viewController id="zre-vs-Fdq" customClass="UserProfileViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -347,7 +349,8 @@
                             <constraint firstItem="wMr-vg-TwD" firstAttribute="leading" secondItem="fS6-RR-wTe" secondAttribute="leading" constant="20" id="zcf-QE-GUT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="z9w-cQ-Dru">
+                    <navigationItem key="navigationItem" title="Fontaine" id="z9w-cQ-Dru">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="aqu-pl-n5T"/>
                         <barButtonItem key="rightBarButtonItem" title="Upload Photo" id="jsx-x2-alJ">
                             <connections>
                                 <action selector="didTapButton:" destination="zre-vs-Fdq" id="yc9-km-ttW"/>
@@ -370,7 +373,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gPr-mG-aw6"/>
+        <segue reference="snE-Am-PKh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

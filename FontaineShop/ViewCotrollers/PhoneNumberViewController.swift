@@ -19,14 +19,12 @@ class PhoneNumberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        
         setupConfig()
         
     }
     
     func setupConfig() {
-        navigationController?.isNavigationBarHidden = true
+        
         verifyButton.isEnabled = false
         verifyButton.layer.cornerRadius = 12
         
