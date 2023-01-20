@@ -10,16 +10,20 @@ import UIKit
 class ProductViewController: UIViewController {
 
     @IBOutlet weak var productCollectionView: UICollectionView!
+    @IBOutlet weak var basketButton: UIButton!
     
     let productManager = ProductManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        updateUI()
         prepareCollectionView()
         getData()
-        
-        
+    }
+    
+    func updateUI() {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        basketButton.layer.cornerRadius = 12
     }
     
     func getData() {

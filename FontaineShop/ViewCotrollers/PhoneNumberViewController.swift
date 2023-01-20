@@ -19,11 +19,11 @@ class PhoneNumberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupConfig()
+        updateUI()
         
     }
     
-    func setupConfig() {
+    func updateUI() {
         
         verifyButton.isEnabled = false
         verifyButton.layer.cornerRadius = 12

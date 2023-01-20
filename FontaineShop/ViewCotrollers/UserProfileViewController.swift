@@ -11,7 +11,7 @@ import FirebaseAuth
 import Kingfisher
 
 class UserProfileViewController: UIViewController {
-
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var adressLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -23,7 +23,6 @@ class UserProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loadData()
     }
     
@@ -37,8 +36,11 @@ class UserProfileViewController: UIViewController {
         }
     }
     
+    
     func updateUI() {
+        saveButton.layer.cornerRadius = 12
         guard let imageUrl = user?.imageUrl, let source = URL.init(string: imageUrl) else { return }
+        
         userPhoto.kf.setImage(with: source)
     }
     
@@ -54,11 +56,11 @@ class UserProfileViewController: UIViewController {
         
         let userName = nameTextField.text
         let address = addressTextField.text
-
+        
         
         if let currentUser = Auth.auth().currentUser {
             let phoneNumber = currentUser.phoneNumber
-            let user = User(uuid: currentUser.uid, phoneNumber: phoneNumber, fullName: userName, address: address, imageUrl: nil)
+            let user = User(uuid: currentUser.uid, phoneNumber: phoneNumber, fullName: userName, address: address, imageUrl: user?.imageUrl)
             let userManager = UserManager()
             userManager.saveUserFields(user: user) {
                 self.performSegue(withIdentifier: "fromEditToProduct", sender: nil)
@@ -82,12 +84,11 @@ extension UserProfileViewController: UIImagePickerControllerDelegate, UINavigati
             let newUser = User(uuid: currentUser.uid, phoneNumber: user.phoneNumber, fullName: user.fullName, address: user.address, imageUrl: urlString)
             
             let userManager = UserManager()
-            userManager.saveUserFields(user: user) { [weak self] in
+            userManager.saveUserFields(user: newUser) { [weak self] in
                 self?.user = newUser
                 self?.updateUI()
             }
         }
-        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

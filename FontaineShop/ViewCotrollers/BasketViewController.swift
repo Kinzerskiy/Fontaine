@@ -26,6 +26,7 @@ class BasketViewController: UIViewController {
     }
     
     func updateButton() {
+        placeOrderButton.layer.cornerRadius = 12
         let title = "Order for " + "\(BasketManager.shared.getPrice())"
         placeOrderButton.setTitle(title, for: .normal)
     }

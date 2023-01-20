@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-MI-eRl">
-                                <rect key="frame" x="10" y="396" width="150" height="21"/>
+                                <rect key="frame" x="10" y="396.5" width="150" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -140,7 +140,7 @@
                                     <action selector="checkCodeAction:" destination="bGU-YC-lX0" eventType="touchUpInside" id="dUR-Vc-9ZS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="20" maximumZoomScale="20" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-ya-Ipt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" minimumZoomScale="20" maximumZoomScale="20" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RWM-ya-Ipt">
                                 <rect key="frame" x="10" y="425.5" width="394" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -183,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="964" y="98"/>
         </scene>
-        <!--Fontaine-->
+        <!--Product View Controller-->
         <scene sceneID="O6A-7T-YtJ">
             <objects>
                 <viewController id="xQl-1t-PFA" customClass="ProductViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,10 +224,15 @@
                             <constraint firstItem="cok-xO-7FJ" firstAttribute="bottom" secondItem="eEH-Rj-N2J" secondAttribute="bottom" id="qx0-Nb-56A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Fontaine" id="Nvq-y0-0fB">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="AMp-Xn-tip"/>
+                    <navigationItem key="navigationItem" id="Nvq-y0-0fB">
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="rge-tB-vrt">
+                            <connections>
+                                <segue destination="kJg-J5-UeV" kind="show" id="7II-b9-sUg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="basketButton" destination="cok-xO-7FJ" id="ZVM-Uk-oM1"/>
                         <outlet property="productCollectionView" destination="nXo-qK-AkE" id="vuH-mj-Zzg"/>
                         <segue destination="bEa-1v-IAO" kind="show" identifier="fromProductToBusket" id="1s3-cx-l0E"/>
                     </connections>
@@ -236,7 +241,7 @@
             </objects>
             <point key="canvasLocation" x="1899" y="445"/>
         </scene>
-        <!--Basket View Controller-->
+        <!--Fontaine-->
         <scene sceneID="htw-zS-q4M">
             <objects>
                 <viewController id="bEa-1v-IAO" customClass="BasketViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,7 +276,9 @@
                             <constraint firstItem="x13-uT-SU1" firstAttribute="top" secondItem="l1R-cN-UpP" secondAttribute="bottom" id="tZ5-9f-7EO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="e4P-0N-APl"/>
+                    <navigationItem key="navigationItem" title="Fontaine" id="e4P-0N-APl">
+                        <barButtonItem key="backBarButtonItem" title="Products" id="Fyb-gX-sxu"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="basketTableView" destination="l1R-cN-UpP" id="zMt-qf-ebq"/>
                         <outlet property="placeOrderButton" destination="x13-uT-SU1" id="w64-SF-3wg"/>
@@ -284,7 +291,7 @@
         <!--Fontaine-->
         <scene sceneID="AOn-BB-yaN">
             <objects>
-                <viewController id="zre-vs-Fdq" customClass="UserProfileViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserProfileViewController" id="zre-vs-Fdq" customClass="UserProfileViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y1B-wr-B1y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +306,7 @@
                                     <action selector="saveButtonPressed:" destination="zre-vs-Fdq" eventType="touchUpInside" id="RpI-hV-yug"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-v9-gkB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7p-v9-gkB">
                                 <rect key="frame" x="20" y="108" width="374" height="200"/>
                                 <color key="backgroundColor" red="0.84313725490000002" green="0.91372549020000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -371,9 +378,65 @@
             </objects>
             <point key="canvasLocation" x="1898.5507246376812" y="-263.16964285714283"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="hyo-lz-6qz">
+            <objects>
+                <viewController id="kJg-J5-UeV" customClass="ProfileViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zvl-Pu-lO5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-Jp-6qj">
+                                <rect key="frame" x="132" y="112" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YHO-37-eI1">
+                                <rect key="frame" x="20" y="108" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PL8-Hu-iTw"/>
+                                    <constraint firstAttribute="height" constant="100" id="WN7-HO-6ov"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9y-8l-gR5">
+                                <rect key="frame" x="132" y="141" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fGT-uQ-jtu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cdq-Jp-6qj" firstAttribute="top" secondItem="fGT-uQ-jtu" secondAttribute="top" constant="24" id="864-ii-DRi"/>
+                            <constraint firstItem="YHO-37-eI1" firstAttribute="top" secondItem="fGT-uQ-jtu" secondAttribute="top" constant="20" id="Ebv-7f-XeL"/>
+                            <constraint firstItem="YHO-37-eI1" firstAttribute="leading" secondItem="fGT-uQ-jtu" secondAttribute="leading" constant="20" id="N0Z-F3-fWw"/>
+                            <constraint firstItem="cdq-Jp-6qj" firstAttribute="leading" secondItem="YHO-37-eI1" secondAttribute="trailing" constant="12" id="OE4-tD-qPR"/>
+                            <constraint firstItem="x9y-8l-gR5" firstAttribute="leading" secondItem="YHO-37-eI1" secondAttribute="trailing" constant="12" id="TyS-HN-SmM"/>
+                            <constraint firstItem="x9y-8l-gR5" firstAttribute="top" secondItem="cdq-Jp-6qj" secondAttribute="bottom" constant="8" id="wXh-8C-2mo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mpb-Jx-MZt">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="FKK-Bg-qnT">
+                            <connections>
+                                <action selector="editButtonAction:" destination="kJg-J5-UeV" id="7Oz-4q-GEE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="x9y-8l-gR5" id="SpG-rc-LTG"/>
+                        <outlet property="userNameLabel" destination="cdq-Jp-6qj" id="3hp-gq-KDf"/>
+                        <outlet property="userPhoto" destination="YHO-37-eI1" id="Kt5-aK-g4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81e-lg-ppv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676" y="-262"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="snE-Am-PKh"/>
+        <segue reference="MRB-pA-zaQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
