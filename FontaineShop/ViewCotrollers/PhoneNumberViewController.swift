@@ -20,7 +20,7 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        
+        navigationItem.setHidesBackButton(true, animated: true)
     }
     
     func updateUI() {

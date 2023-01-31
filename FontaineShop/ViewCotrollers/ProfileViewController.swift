@@ -34,8 +34,8 @@ class ProfileViewController: UIViewController {
     
     func updateUI(with user: User) {
         userNameLabel.text = user.fullName
-        addressLabel.text = user.phoneNumber
-        print(user.imageUrl)
+        addressLabel.text = user.address
+       
         guard let imageUrl = user.imageUrl, let source = URL.init(string: imageUrl) else { return }
         userPhoto.kf.setImage(with: source)
     }
@@ -50,13 +50,9 @@ class ProfileViewController: UIViewController {
     
     @IBAction func editButtonAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "UserProfileViewController") as! UserProfileViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
         
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-
-    
-
 }

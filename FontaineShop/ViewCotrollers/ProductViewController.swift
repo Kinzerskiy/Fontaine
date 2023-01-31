@@ -18,6 +18,11 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         prepareCollectionView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getData()
     }
     
@@ -41,7 +46,7 @@ class ProductViewController: UIViewController {
     }
     
     @IBAction func basketAction(_ sender: Any) {
-        performSegue(withIdentifier: "fromProductToBusket", sender: nil)
+        performSegue(withIdentifier: "fromProductToBasket", sender: nil)
     }
     
 }

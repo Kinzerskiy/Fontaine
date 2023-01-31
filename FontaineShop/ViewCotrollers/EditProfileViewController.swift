@@ -10,7 +10,7 @@ import FirebaseStorage
 import FirebaseAuth
 import Kingfisher
 
-class UserProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var adressLabel: UILabel!
@@ -69,7 +69,7 @@ class UserProfileViewController: UIViewController {
     }
 }
 
-extension UserProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension EditProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
