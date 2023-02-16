@@ -12,47 +12,48 @@ class BasketManager {
     
     static let shared = BasketManager()
     
-    private var products: [BasketProduct] = []
+    var order: OrderCreateModel = OrderCreateModel()
+    
     private init() {}
     
     
     func add(product: Product) {
-        let index = products.firstIndex { basketProduct in
+        let index = order.products.firstIndex { basketProduct in
             basketProduct.product.uuid == product.uuid
         }
         if let  index = index {
-            products[index].count += 1
+            order.products[index].count += 1
         } else {
-            products.append(.init(product: product, count: 1))
+            order.products.append(.init(product: product, count: 1))
         }
     }
     
     func getNumberOfProducts() -> Int {
-        return products.count
+        return order.products.count
     }
     
     func getProduct(by index: Int) -> BasketProduct {
       
-        products[index]
+        order.products[index]
     }
     
     
     func plusProduct(by index: Int) {
-        products[index].count += 1
+        order.products[index].count += 1
     }
     
     
     func minusProduct(by index: Int) {
         
-        products[index].count -= 1
-        if products[index].count <= 0 {
-            products.remove(at: index)
+        order.products[index].count -= 1
+        if order.products[index].count <= 0 {
+            order.products.remove(at: index)
         }
     }
     
     func getPrice() -> Double {
         var total = 0.0
-        for product in products {
+        for product in order.products {
             let tempTotal = product.product.price * Double(product.count)
             total = tempTotal + total
         }
@@ -60,6 +61,6 @@ class BasketManager {
     }
     
     func removeProduct(at index: Int) {
-        products.remove(at: index)
+        order.products.remove(at: index)
     }
 }

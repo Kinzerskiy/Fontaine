@@ -52,7 +52,6 @@ class ProfileViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
         
-        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

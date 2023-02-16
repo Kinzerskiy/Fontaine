@@ -31,7 +31,10 @@ class BasketViewController: UIViewController {
         placeOrderButton.setTitle(title, for: .normal)
     }
     
-}
+    @IBAction func placeOrderButtonAction(_ sender: UIButton) {
+        }
+    }
+    
 
 extension BasketViewController: UITableViewDelegate, UITableViewDataSource {
     

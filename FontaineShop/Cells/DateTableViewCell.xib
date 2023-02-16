@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="DateTableViewCell" customModule="FontaineShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVg-I7-85b">
+                        <rect key="frame" x="10" y="0.0" width="36" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3v-ez-Z1d">
+                        <rect key="frame" x="10" y="26" width="494" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H3v-ez-Z1d" firstAttribute="top" secondItem="cVg-I7-85b" secondAttribute="bottom" constant="5" id="4T3-Yn-9tr"/>
+                    <constraint firstItem="H3v-ez-Z1d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Dym-NA-5kr"/>
+                    <constraint firstAttribute="trailing" secondItem="H3v-ez-Z1d" secondAttribute="trailing" constant="10" id="FAe-b2-oOg"/>
+                    <constraint firstItem="cVg-I7-85b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TRo-aP-jRB"/>
+                    <constraint firstAttribute="bottom" secondItem="H3v-ez-Z1d" secondAttribute="bottom" constant="5" id="kYf-Ha-BQS"/>
+                    <constraint firstItem="cVg-I7-85b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wzh-Gv-t7f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateTextField" destination="H3v-ez-Z1d" id="4Xc-PS-cxc"/>
+            </connections>
+            <point key="canvasLocation" x="51.908396946564885" y="41.901408450704224"/>
+        </tableViewCell>
+    </objects>
+</document>

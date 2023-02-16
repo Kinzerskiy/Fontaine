@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2B27D4299E57590099F978 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B27D3299E57590099F978 /* Order.swift */; };
+		0C2B27D6299E576C0099F978 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B27D5299E576C0099F978 /* OrderManager.swift */; };
+		0C2B27D8299EA93A0099F978 /* FondyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2B27D7299EA93A0099F978 /* FondyViewController.swift */; };
 		0C359A0B296837300047939C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A0A296837300047939C /* WelcomeViewController.swift */; };
 		0C359A102968580F0047939C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A0F2968580E0047939C /* UserManager.swift */; };
 		0C359A132968587B0047939C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C359A122968587A0047939C /* User.swift */; };
 		0C56A2FA296627F900800869 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C56A2F9296627F900800869 /* GoogleService-Info.plist */; };
 		0C56A2FC29662D5F00800869 /* CodeValidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C56A2FB29662D5F00800869 /* CodeValidViewController.swift */; };
+		0C603BBF2993045D006BE32B /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C603BBD2993045D006BE32B /* DateTableViewCell.swift */; };
+		0C603BC02993045D006BE32B /* DateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C603BBE2993045D006BE32B /* DateTableViewCell.xib */; };
 		0C8AF6BC296F091500E5B872 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BA296F091400E5B872 /* ProductCollectionViewCell.swift */; };
 		0C8AF6BD296F091500E5B872 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BB296F091500E5B872 /* ProductCollectionViewCell.xib */; };
 		0C8AF6BF296F094100E5B872 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6BE296F094100E5B872 /* ProductViewController.swift */; };
@@ -23,9 +28,13 @@
 		0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */; };
 		0CA1DA3429890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3229890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.swift */; };
 		0CA1DA3529890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3329890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.xib */; };
-		0CA1DA3829892136005DBA23 /* PaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3629892136005DBA23 /* PaymentCollectionViewCell.swift */; };
-		0CA1DA3929892136005DBA23 /* PaymentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3729892136005DBA23 /* PaymentCollectionViewCell.xib */; };
 		0CA1DA3D2989248D005DBA23 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */; };
+		0CA1DA4029894B96005DBA23 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3E29894B96005DBA23 /* TextFieldTableViewCell.swift */; };
+		0CA1DA4129894B96005DBA23 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3F29894B96005DBA23 /* TextFieldTableViewCell.xib */; };
+		0CA1DA4429894BB4005DBA23 /* SwitcherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA4229894BB3005DBA23 /* SwitcherTableViewCell.swift */; };
+		0CA1DA4529894BB4005DBA23 /* SwitcherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA4329894BB4005DBA23 /* SwitcherTableViewCell.xib */; };
+		0CA1DA4929894BEE005DBA23 /* OrderTotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA4729894BEE005DBA23 /* OrderTotalTableViewCell.swift */; };
+		0CA1DA4A29894BEE005DBA23 /* OrderTotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA4829894BEE005DBA23 /* OrderTotalTableViewCell.xib */; };
 		0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAD6AB2976926A00536B91 /* FileManager.swift */; };
 		0CAE9BDA297A79F8000DF23D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE9BD9297A79F8000DF23D /* ProfileViewController.swift */; };
 		0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A12965B9CF000D379A /* AppDelegate.swift */; };
@@ -34,6 +43,8 @@
 		0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A72965B9CF000D379A /* Main.storyboard */; };
 		0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3AA2965B9D2000D379A /* Assets.xcassets */; };
 		0CCDD3AE2965B9D2000D379A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCDD3AC2965B9D2000D379A /* LaunchScreen.storyboard */; };
+		0CE4C5FE29986BF300EDDF0D /* PaymenMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */; };
+		0CE4C5FF29986BF300EDDF0D /* PaymentMethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */; };
 		0CE9A6A12972D54F000B4FF0 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */; };
 		0CF2985C2975D350008FE999 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2985B2975D350008FE999 /* EditProfileViewController.swift */; };
 		13B474935D6CC7679C030267 /* Pods_FontaineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */; };
@@ -41,11 +52,16 @@
 
 /* Begin PBXFileReference section */
 		09FAFB6B8152DF43A0FDDD11 /* Pods-FontaineShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontaineShop.release.xcconfig"; path = "Target Support Files/Pods-FontaineShop/Pods-FontaineShop.release.xcconfig"; sourceTree = "<group>"; };
+		0C2B27D3299E57590099F978 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0C2B27D5299E576C0099F978 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		0C2B27D7299EA93A0099F978 /* FondyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FondyViewController.swift; sourceTree = "<group>"; };
 		0C359A0A296837300047939C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0C359A0F2968580E0047939C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		0C359A122968587A0047939C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0C56A2F9296627F900800869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C56A2FB29662D5F00800869 /* CodeValidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeValidViewController.swift; sourceTree = "<group>"; };
+		0C603BBD2993045D006BE32B /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		0C603BBE2993045D006BE32B /* DateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTableViewCell.xib; sourceTree = "<group>"; };
 		0C8AF6BA296F091400E5B872 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C8AF6BB296F091500E5B872 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C8AF6BE296F094100E5B872 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductViewController.swift; path = /Users/anton1/Desktop/copy/FontaineShop/FontaineShop/ViewCotrollers/ProductViewController.swift; sourceTree = "<absolute>"; };
@@ -57,9 +73,13 @@
 		0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		0CA1DA3229890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAndDeliveryTableViewCell.swift; sourceTree = "<group>"; };
 		0CA1DA3329890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentAndDeliveryTableViewCell.xib; sourceTree = "<group>"; };
-		0CA1DA3629892136005DBA23 /* PaymentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewCell.swift; sourceTree = "<group>"; };
-		0CA1DA3729892136005DBA23 /* PaymentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCollectionViewCell.xib; sourceTree = "<group>"; };
 		0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		0CA1DA3E29894B96005DBA23 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1DA3F29894B96005DBA23 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		0CA1DA4229894BB3005DBA23 /* SwitcherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1DA4329894BB4005DBA23 /* SwitcherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitcherTableViewCell.xib; sourceTree = "<group>"; };
+		0CA1DA4729894BEE005DBA23 /* OrderTotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTotalTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1DA4829894BEE005DBA23 /* OrderTotalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTotalTableViewCell.xib; sourceTree = "<group>"; };
 		0CAAD6AB2976926A00536B91 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		0CAE9BD9297A79F8000DF23D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0CCDD39E2965B9CF000D379A /* FontaineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontaineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +90,8 @@
 		0CCDD3AA2965B9D2000D379A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CCDD3AD2965B9D2000D379A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CCDD3AF2965B9D2000D379A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymenMethodTableViewCell.swift; sourceTree = "<group>"; };
+		0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableViewCell.xib; sourceTree = "<group>"; };
 		0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		0CF2985B2975D350008FE999 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8DF34CC6FCBE2340DE6EB833 /* Pods-FontaineShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontaineShop.debug.xcconfig"; path = "Target Support Files/Pods-FontaineShop/Pods-FontaineShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +116,9 @@
 				0C359A0F2968580E0047939C /* UserManager.swift */,
 				0C8AF6C6296F116500E5B872 /* BasketManager.swift */,
 				0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */,
+				0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */,
 				0CAAD6AB2976926A00536B91 /* FileManager.swift */,
+				0C2B27D5299E576C0099F978 /* OrderManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -104,7 +128,7 @@
 			children = (
 				0C359A122968587A0047939C /* User.swift */,
 				0C8AF6C0296F0CD200E5B872 /* Product.swift */,
-				0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */,
+				0C2B27D3299E57590099F978 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +144,7 @@
 				0CF2985B2975D350008FE999 /* EditProfileViewController.swift */,
 				0CAE9BD9297A79F8000DF23D /* ProfileViewController.swift */,
 				0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */,
+				0C2B27D7299EA93A0099F978 /* FondyViewController.swift */,
 			);
 			path = ViewCotrollers;
 			sourceTree = "<group>";
@@ -133,8 +158,16 @@
 				0C8AF6C3296F0F3800E5B872 /* BasketTableViewCell.xib */,
 				0CA1DA3229890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.swift */,
 				0CA1DA3329890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.xib */,
-				0CA1DA3629892136005DBA23 /* PaymentCollectionViewCell.swift */,
-				0CA1DA3729892136005DBA23 /* PaymentCollectionViewCell.xib */,
+				0CA1DA3E29894B96005DBA23 /* TextFieldTableViewCell.swift */,
+				0CA1DA3F29894B96005DBA23 /* TextFieldTableViewCell.xib */,
+				0CA1DA4229894BB3005DBA23 /* SwitcherTableViewCell.swift */,
+				0CA1DA4329894BB4005DBA23 /* SwitcherTableViewCell.xib */,
+				0CA1DA4729894BEE005DBA23 /* OrderTotalTableViewCell.swift */,
+				0CA1DA4829894BEE005DBA23 /* OrderTotalTableViewCell.xib */,
+				0C603BBD2993045D006BE32B /* DateTableViewCell.swift */,
+				0C603BBE2993045D006BE32B /* DateTableViewCell.xib */,
+				0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */,
+				0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -252,14 +285,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C603BC02993045D006BE32B /* DateTableViewCell.xib in Resources */,
 				0CCDD3AE2965B9D2000D379A /* LaunchScreen.storyboard in Resources */,
 				0C56A2FA296627F900800869 /* GoogleService-Info.plist in Resources */,
 				0C8AF6BD296F091500E5B872 /* ProductCollectionViewCell.xib in Resources */,
-				0CA1DA3929892136005DBA23 /* PaymentCollectionViewCell.xib in Resources */,
+				0CE4C5FF29986BF300EDDF0D /* PaymentMethodTableViewCell.xib in Resources */,
 				0CA1DA3529890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.xib in Resources */,
+				0CA1DA4529894BB4005DBA23 /* SwitcherTableViewCell.xib in Resources */,
+				0CA1DA4A29894BEE005DBA23 /* OrderTotalTableViewCell.xib in Resources */,
 				0C8AF6C5296F0F3800E5B872 /* BasketTableViewCell.xib in Resources */,
 				0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */,
 				0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */,
+				0CA1DA4129894B96005DBA23 /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,13 +352,19 @@
 				0C8AF6C9296F11C200E5B872 /* BasketProduct.swift in Sources */,
 				0C8AF6C7296F116500E5B872 /* BasketManager.swift in Sources */,
 				0CCDD3A62965B9CF000D379A /* PhoneNumberViewController.swift in Sources */,
+				0C603BBF2993045D006BE32B /* DateTableViewCell.swift in Sources */,
 				0C8AF6C4296F0F3800E5B872 /* BasketTableViewCell.swift in Sources */,
 				0C8AF6BC296F091500E5B872 /* ProductCollectionViewCell.swift in Sources */,
 				0CF2985C2975D350008FE999 /* EditProfileViewController.swift in Sources */,
+				0CE4C5FE29986BF300EDDF0D /* PaymenMethodTableViewCell.swift in Sources */,
+				0CA1DA4429894BB4005DBA23 /* SwitcherTableViewCell.swift in Sources */,
 				0CAE9BDA297A79F8000DF23D /* ProfileViewController.swift in Sources */,
-				0CA1DA3829892136005DBA23 /* PaymentCollectionViewCell.swift in Sources */,
+				0C2B27D4299E57590099F978 /* Order.swift in Sources */,
+				0C2B27D8299EA93A0099F978 /* FondyViewController.swift in Sources */,
+				0CA1DA4929894BEE005DBA23 /* OrderTotalTableViewCell.swift in Sources */,
 				0C8AF6BF296F094100E5B872 /* ProductViewController.swift in Sources */,
 				0C359A102968580F0047939C /* UserManager.swift in Sources */,
+				0CA1DA4029894B96005DBA23 /* TextFieldTableViewCell.swift in Sources */,
 				0C8AF6C1296F0CD200E5B872 /* Product.swift in Sources */,
 				0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */,
 				0C359A132968587B0047939C /* User.swift in Sources */,
@@ -331,6 +374,7 @@
 				0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */,
 				0CA1DA3D2989248D005DBA23 /* DeliveryViewController.swift in Sources */,
 				0CA1DA3429890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.swift in Sources */,
+				0C2B27D6299E576C0099F978 /* OrderManager.swift in Sources */,
 				0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */,
 				0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */,
 			);

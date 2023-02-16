@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldTableViewCell" rowHeight="115" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="FontaineShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnE-5P-b6Z">
+                        <rect key="frame" x="10" y="0.0" width="86.333333333333329" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-qH-iTX">
+                        <rect key="frame" x="10" y="26" width="375" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ehL-qH-iTX" secondAttribute="bottom" constant="5" id="05y-Wt-ZaG"/>
+                    <constraint firstItem="ehL-qH-iTX" firstAttribute="top" secondItem="tnE-5P-b6Z" secondAttribute="bottom" constant="5" id="G7s-Ad-vG6"/>
+                    <constraint firstItem="ehL-qH-iTX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="IPF-NH-4Pt"/>
+                    <constraint firstItem="tnE-5P-b6Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="M99-li-X1B"/>
+                    <constraint firstItem="tnE-5P-b6Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gFf-xv-aun"/>
+                    <constraint firstAttribute="trailing" secondItem="ehL-qH-iTX" secondAttribute="trailing" constant="10" id="gyV-N2-zeC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressTextField" destination="ehL-qH-iTX" id="584-qO-JWM"/>
+                <outlet property="labelName" destination="tnE-5P-b6Z" id="seB-IF-9T1"/>
+            </connections>
+            <point key="canvasLocation" x="51.145038167938928" y="44.366197183098592"/>
+        </tableViewCell>
+    </objects>
+</document>

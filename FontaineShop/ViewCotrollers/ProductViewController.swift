@@ -46,7 +46,7 @@ class ProductViewController: UIViewController {
     }
     
     @IBAction func basketAction(_ sender: Any) {
-        performSegue(withIdentifier: "fromProductToBasket", sender: nil)
+        
     }
     
 }
