@@ -186,7 +186,7 @@
         <!--Fontaine-->
         <scene sceneID="O6A-7T-YtJ">
             <objects>
-                <viewController id="xQl-1t-PFA" customClass="ProductViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" id="xQl-1t-PFA" customClass="ProductViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fsU-Fr-wlL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnD-bs-Lew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2819" y="445"/>
+            <point key="canvasLocation" x="2675" y="445"/>
         </scene>
         <!--Setup Profile-->
         <scene sceneID="AOn-BB-yaN">
@@ -407,15 +407,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STw-Ts-uGL">
+                                <rect key="frame" x="20" y="827" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My previous orders"/>
+                                <connections>
+                                    <action selector="orderHistoryAction:" destination="kJg-J5-UeV" eventType="touchUpInside" id="ca3-LZ-StV"/>
+                                    <segue destination="uWW-ag-3eX" kind="show" identifier="fromProfileToHistory" id="Hsn-no-IVs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fGT-uQ-jtu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cdq-Jp-6qj" firstAttribute="top" secondItem="fGT-uQ-jtu" secondAttribute="top" constant="24" id="864-ii-DRi"/>
                             <constraint firstItem="YHO-37-eI1" firstAttribute="top" secondItem="fGT-uQ-jtu" secondAttribute="top" constant="20" id="Ebv-7f-XeL"/>
+                            <constraint firstItem="fGT-uQ-jtu" firstAttribute="bottom" secondItem="STw-Ts-uGL" secondAttribute="bottom" id="GBy-ev-e2M"/>
                             <constraint firstItem="YHO-37-eI1" firstAttribute="leading" secondItem="fGT-uQ-jtu" secondAttribute="leading" constant="20" id="N0Z-F3-fWw"/>
+                            <constraint firstItem="STw-Ts-uGL" firstAttribute="leading" secondItem="fGT-uQ-jtu" secondAttribute="leading" constant="20" id="NsW-P2-TcR"/>
                             <constraint firstItem="cdq-Jp-6qj" firstAttribute="leading" secondItem="YHO-37-eI1" secondAttribute="trailing" constant="12" id="OE4-tD-qPR"/>
                             <constraint firstItem="x9y-8l-gR5" firstAttribute="leading" secondItem="YHO-37-eI1" secondAttribute="trailing" constant="12" id="TyS-HN-SmM"/>
+                            <constraint firstItem="fGT-uQ-jtu" firstAttribute="trailing" secondItem="STw-Ts-uGL" secondAttribute="trailing" constant="20" id="lyt-eF-Kbx"/>
                             <constraint firstItem="x9y-8l-gR5" firstAttribute="top" secondItem="cdq-Jp-6qj" secondAttribute="bottom" constant="8" id="wXh-8C-2mo"/>
                         </constraints>
                     </view>
@@ -428,6 +440,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="x9y-8l-gR5" id="SpG-rc-LTG"/>
+                        <outlet property="orderHistoryButton" destination="STw-Ts-uGL" id="wQb-sT-S3I"/>
                         <outlet property="userNameLabel" destination="cdq-Jp-6qj" id="3hp-gq-KDf"/>
                         <outlet property="userPhoto" destination="YHO-37-eI1" id="Kt5-aK-g4L"/>
                     </connections>
@@ -435,6 +448,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81e-lg-ppv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2676" y="-262"/>
+        </scene>
+        <!--Previous Orders View Controller-->
+        <scene sceneID="FP1-Va-Jdj">
+            <objects>
+                <viewController id="uWW-ag-3eX" customClass="PreviousOrdersViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJB-Rp-UMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DdN-U5-KdW">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XmP-ai-OUR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DdN-U5-KdW" firstAttribute="top" secondItem="XmP-ai-OUR" secondAttribute="top" id="ECc-jO-7yq"/>
+                            <constraint firstItem="XmP-ai-OUR" firstAttribute="trailing" secondItem="DdN-U5-KdW" secondAttribute="trailing" id="NcH-MN-PaO"/>
+                            <constraint firstItem="DdN-U5-KdW" firstAttribute="leading" secondItem="XmP-ai-OUR" secondAttribute="leading" id="pc0-6J-ZRG"/>
+                            <constraint firstItem="XmP-ai-OUR" firstAttribute="bottom" secondItem="DdN-U5-KdW" secondAttribute="bottom" id="yZ4-Zk-25X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x0J-zT-wQb"/>
+                    <connections>
+                        <outlet property="ordersTableView" destination="DdN-U5-KdW" id="HP6-BL-uPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbW-Pp-46N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="-263"/>
         </scene>
         <!--Payment And Dilivery-->
         <scene sceneID="sk6-ea-6AK">
@@ -473,18 +517,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Payment And Dilivery" id="JC3-GX-ILJ"/>
                     <connections>
-                        <outlet property="payButton" destination="ImH-A2-mpP" id="Paj-il-3DB"/>
                         <outlet property="tableView" destination="Z1B-wG-11a" id="wLh-58-thy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEC-7z-y8F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3604" y="445"/>
+            <point key="canvasLocation" x="3580" y="445"/>
         </scene>
-        <!--View Controller-->
+        <!--Fondy View Controller-->
         <scene sceneID="vRl-v9-g5N">
             <objects>
-                <viewController id="fFz-5P-NFh" customClass="ViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FondyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fFz-5P-NFh" customClass="FondyViewController" customModule="FontaineShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d5e-or-IV1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -528,7 +571,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfD-mB-6Lq">
-                                <rect key="frame" x="35" y="274" width="162" height="21"/>
+                                <rect key="frame" x="35" y="274" width="169.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -539,7 +582,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-z7-txx">
-                                <rect key="frame" x="232" y="274" width="162" height="21"/>
+                                <rect key="frame" x="224.5" y="274" width="169.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -589,19 +632,29 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Pay"/>
                                 <connections>
-                                    <action selector="onPayPressed:" destination="fFz-5P-NFh" eventType="touchUpInside" id="heD-Ea-Aw2"/>
+                                    <action selector="onPayPressed:" destination="fFz-5P-NFh" eventType="touchUpInside" id="PzA-Ku-xjf"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-y0-r4g">
                                 <rect key="frame" x="0.0" y="527.5" width="414" height="285.5"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-DG-QEy">
+                                        <rect key="frame" x="197" y="10" width="20" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5cm-DG-QEy" firstAttribute="top" secondItem="CRD-y0-r4g" secondAttribute="top" constant="10" id="MIt-qE-evz"/>
+                                    <constraint firstItem="5cm-DG-QEy" firstAttribute="leading" secondItem="CRD-y0-r4g" secondAttribute="leading" constant="197" id="hMf-zD-5J1"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cm-DG-QEy" secondAttribute="trailing" constant="197" id="s1y-1W-HJw"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEP-67-oDN">
                                 <rect key="frame" x="287" y="59" width="97" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Test Card"/>
                                 <connections>
-                                    <action selector="onTestCardPressed:" destination="fFz-5P-NFh" eventType="touchUpInside" id="slz-jI-uaW"/>
+                                    <action selector="onTestCardPressed:" destination="fFz-5P-NFh" eventType="touchUpInside" id="bu3-aQ-XqA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -650,24 +703,24 @@
                             <constraint firstItem="qGD-YJ-rkq" firstAttribute="leading" secondItem="i5y-hA-LIP" secondAttribute="leading" constant="35" id="sc4-Dk-f8k"/>
                             <constraint firstItem="i5y-hA-LIP" firstAttribute="trailing" secondItem="iyY-uv-iRG" secondAttribute="trailing" constant="30" id="siY-7h-vzz"/>
                             <constraint firstItem="9Rr-6Y-iHy" firstAttribute="top" secondItem="qGD-YJ-rkq" secondAttribute="bottom" constant="4" id="uUp-j4-QBh"/>
-                            <constraint firstItem="5h3-z7-txx" firstAttribute="leading" secondItem="qfD-mB-6Lq" secondAttribute="trailing" constant="35" id="uu0-Th-b43"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="IWM-hD-XUO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="cardInputLayout" destination="iyY-uv-iRG" id="TtT-9e-HyD"/>
-                        <outlet property="textFieldAmount" destination="N0i-XL-SDQ" id="cr7-M8-2qd"/>
-                        <outlet property="textFieldCurrency" destination="mVY-Xc-fkZ" id="ebr-mj-Oxa"/>
-                        <outlet property="textFieldDescription" destination="0zw-Th-MaF" id="edD-VE-KwG"/>
-                        <outlet property="textFieldEmail" destination="fQd-kg-jaq" id="sRX-r8-l0U"/>
-                        <outlet property="textFieldMerchantID" destination="9Rr-6Y-iHy" id="mYS-2f-3Rp"/>
+                        <outlet property="activityIndicator" destination="5cm-DG-QEy" id="pS8-Lt-plJ"/>
+                        <outlet property="amountTextField" destination="N0i-XL-SDQ" id="56D-Oy-R1W"/>
+                        <outlet property="cardInputLayout" destination="iyY-uv-iRG" id="6ZQ-OC-Tcm"/>
+                        <outlet property="currencyTextField" destination="mVY-Xc-fkZ" id="Sut-6v-Ogd"/>
+                        <outlet property="descriptionTextField" destination="0zw-Th-MaF" id="1v8-Cz-jXT"/>
+                        <outlet property="emailTextField" destination="fQd-kg-jaq" id="jmN-rb-MtU"/>
+                        <outlet property="merchantIDTextField" destination="9Rr-6Y-iHy" id="zFZ-bz-49A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ty-y0-gCp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4530" y="445"/>
+            <point key="canvasLocation" x="4454" y="445"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

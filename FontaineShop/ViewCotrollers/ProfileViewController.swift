@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userPhoto: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var orderHistoryButton: UIButton!
     
     let userManager = UserManager()
     
@@ -49,9 +50,15 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func editButtonAction(_ sender: Any) {
+       
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func orderHistoryAction(_ sender: Any) {
+        
+    }
+    
 }

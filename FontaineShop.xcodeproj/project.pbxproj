@@ -46,6 +46,9 @@
 		0CE4C5FE29986BF300EDDF0D /* PaymenMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */; };
 		0CE4C5FF29986BF300EDDF0D /* PaymentMethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */; };
 		0CE9A6A12972D54F000B4FF0 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */; };
+		0CEAA00B299EFAD500CB45BC /* PreviousOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEAA00A299EFAD500CB45BC /* PreviousOrdersViewController.swift */; };
+		0CF216ED299FB8F70007271F /* PreviousOrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF216EB299FB8F70007271F /* PreviousOrdersTableViewCell.swift */; };
+		0CF216EE299FB8F70007271F /* PreviousOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF216EC299FB8F70007271F /* PreviousOrdersTableViewCell.xib */; };
 		0CF2985C2975D350008FE999 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2985B2975D350008FE999 /* EditProfileViewController.swift */; };
 		13B474935D6CC7679C030267 /* Pods_FontaineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +96,9 @@
 		0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymenMethodTableViewCell.swift; sourceTree = "<group>"; };
 		0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodTableViewCell.xib; sourceTree = "<group>"; };
 		0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		0CEAA00A299EFAD500CB45BC /* PreviousOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousOrdersViewController.swift; sourceTree = "<group>"; };
+		0CF216EB299FB8F70007271F /* PreviousOrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousOrdersTableViewCell.swift; sourceTree = "<group>"; };
+		0CF216EC299FB8F70007271F /* PreviousOrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviousOrdersTableViewCell.xib; sourceTree = "<group>"; };
 		0CF2985B2975D350008FE999 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8DF34CC6FCBE2340DE6EB833 /* Pods-FontaineShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontaineShop.debug.xcconfig"; path = "Target Support Files/Pods-FontaineShop/Pods-FontaineShop.debug.xcconfig"; sourceTree = "<group>"; };
 		F6F6DF235CA7CEFC3AF2C495 /* Pods_FontaineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontaineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +122,6 @@
 				0C359A0F2968580E0047939C /* UserManager.swift */,
 				0C8AF6C6296F116500E5B872 /* BasketManager.swift */,
 				0CE9A6A02972D54F000B4FF0 /* ProductManager.swift */,
-				0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */,
 				0CAAD6AB2976926A00536B91 /* FileManager.swift */,
 				0C2B27D5299E576C0099F978 /* OrderManager.swift */,
 			);
@@ -129,6 +134,7 @@
 				0C359A122968587A0047939C /* User.swift */,
 				0C8AF6C0296F0CD200E5B872 /* Product.swift */,
 				0C2B27D3299E57590099F978 /* Order.swift */,
+				0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 				0CAE9BD9297A79F8000DF23D /* ProfileViewController.swift */,
 				0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */,
 				0C2B27D7299EA93A0099F978 /* FondyViewController.swift */,
+				0CEAA00A299EFAD500CB45BC /* PreviousOrdersViewController.swift */,
 			);
 			path = ViewCotrollers;
 			sourceTree = "<group>";
@@ -168,6 +175,8 @@
 				0C603BBE2993045D006BE32B /* DateTableViewCell.xib */,
 				0CE4C5FC29986BF300EDDF0D /* PaymenMethodTableViewCell.swift */,
 				0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */,
+				0CF216EB299FB8F70007271F /* PreviousOrdersTableViewCell.swift */,
+				0CF216EC299FB8F70007271F /* PreviousOrdersTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 				0C8AF6C5296F0F3800E5B872 /* BasketTableViewCell.xib in Resources */,
 				0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */,
 				0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */,
+				0CF216EE299FB8F70007271F /* PreviousOrdersTableViewCell.xib in Resources */,
 				0CA1DA4129894B96005DBA23 /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,8 +384,10 @@
 				0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */,
 				0CA1DA3D2989248D005DBA23 /* DeliveryViewController.swift in Sources */,
 				0CA1DA3429890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.swift in Sources */,
+				0CF216ED299FB8F70007271F /* PreviousOrdersTableViewCell.swift in Sources */,
 				0C2B27D6299E576C0099F978 /* OrderManager.swift in Sources */,
 				0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */,
+				0CEAA00B299EFAD500CB45BC /* PreviousOrdersViewController.swift in Sources */,
 				0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

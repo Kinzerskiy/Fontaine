@@ -32,6 +32,7 @@ class WelcomeViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] (timer) in
         
         let userManager = UserManager()
+            
         guard let currentUser = Auth.auth().currentUser else {
             self?.performSegue(withIdentifier: "welcomeSegue", sender: self)
             return
