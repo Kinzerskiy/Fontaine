@@ -40,7 +40,14 @@ class WelcomeViewController: UIViewController {
         
         userManager.checkIfUserExist(userId: currentUser.uid) { isExist in
             if isExist {
-                self?.performSegue(withIdentifier: "fromWelcomeToProduct", sender: self)
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ProductViewController") as! ProductViewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                
+                UIApplication.shared.windows.first?.rootViewController = navigationController
+                UIApplication.shared.windows.first?.makeKeyAndVisible()
+                
+//                self?.performSegue(withIdentifier: "fromWelcomeToProduct", sender: self)
             } else {
                 self?.performSegue(withIdentifier: "welcomeSegue", sender: self)
             }

@@ -15,6 +15,7 @@ struct OrderCreateModel {
    var address: String = ""
    var comment: String = ""
    var deliveryTime: Date = Date()
+    var orderCreatedDate: Date = Date()
    var isContactDelivey: Bool = false
    var isNotCalling : Bool = false
    var totalPrice: Double { BasketManager.shared.getPrice() }
@@ -157,10 +158,6 @@ class DeliveryViewController: UIViewController {
         let commentTextFieldViewModelRow = DeliveryRow.textField(commentTextFieldViewModel)
         dataSource.append(.textFields([addressTextFieldViewModelRow, commentTextFieldViewModelRow]))
         
-        
-        let dateTextFieldViewModelRow = DeliveryRow.date(dateTextFieldViewModel)
-        dataSource.append(.date(dateTextFieldViewModel))
-        
         let dontCallSwitcherViewModel = SwitcherCellViewModel(switcherName: "Do not call me", isOn:  BasketManager.shared.order.isNotCalling) { [weak self] isOn in
             guard let self = self else { return }
             BasketManager.shared.order.isNotCalling = isOn
@@ -192,20 +189,19 @@ class DeliveryViewController: UIViewController {
     }
     
     @IBAction func payButton(_ sender: Any) {
+        let order = Order(orderId: BasketManager.shared.order.orderId, userId: BasketManager.shared.order.userId, products: BasketManager.shared.order.products, address: BasketManager.shared.order.address, comment: BasketManager.shared.order.comment, deliveryTime: BasketManager.shared.order.deliveryTime, orderCreated: Date(), isContactDelivey: BasketManager.shared.order.isContactDelivey, isNotCalling: BasketManager.shared.order.isNotCalling, paymentCompleted: false, total: BasketManager.shared.getPrice())
         
         if  BasketManager.shared.order.paymentMethod == .cash {
             
             let orderManager = OrderManager()
             
-            let order = Order(orderId: BasketManager.shared.order.orderId, userId: BasketManager.shared.order.userId, products: BasketManager.shared.order.products, address: BasketManager.shared.order.address, comment: BasketManager.shared.order.comment, deliveryTime: BasketManager.shared.order.deliveryTime, isContactDelivey: BasketManager.shared.order.isContactDelivey, isNotCalling: BasketManager.shared.order.isNotCalling, paymentCompleted: false)
             
             orderManager.saveOrder(order: order) { [weak self] in
                 let alert = UIAlertController(title: "Thanks, your order was created", message: nil, preferredStyle: .alert)
                 let cancel = UIAlertAction(title: "OK", style: .cancel) { cancel in
                     BasketManager.shared.order = OrderCreateModel()
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "ProductViewController") as! ProductViewController
-                    self?.navigationController?.pushViewController(vc, animated: true)
+                    
+                    self?.navigationController?.popToRootViewController(animated: true)
                 }
                 alert.addAction(cancel)
                 self?.present(alert, animated: true)
@@ -213,7 +209,8 @@ class DeliveryViewController: UIViewController {
         } else {
             // push fondy screen with payment fillling card, after the payment open the home screen
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "FondyViewController") as! FondyViewController
-            self.present(vc, animated: true, completion: nil)
+            vc.order = order
+            self.navigationController?.pushViewController(vc, animated: true)
             }
     }
         // after order will be created we should remove the current order from baskerManager

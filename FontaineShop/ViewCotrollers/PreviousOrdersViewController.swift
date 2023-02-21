@@ -57,4 +57,13 @@ extension PreviousOrdersViewController: UITableViewDelegate, UITableViewDataSour
         cell.fill(with: order)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "OrderViewController") as? OrderViewController {
+            vc.order = orderManager.getOrder(by: indexPath.row)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
+}

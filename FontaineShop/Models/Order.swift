@@ -16,7 +16,9 @@ struct Order: Codable {
     var address: String?
     var comment: String?
     var deliveryTime: Date
+    var orderCreated: Date
     var isContactDelivey: Bool?
     var isNotCalling : Bool?
     var paymentCompleted: Bool?
+    var total: Double?
 }

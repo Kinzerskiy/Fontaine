@@ -63,7 +63,12 @@ class EditProfileViewController: UIViewController {
             let user = User(uuid: currentUser.uid, phoneNumber: phoneNumber, fullName: userName, address: address, imageUrl: user?.imageUrl)
             let userManager = UserManager()
             userManager.saveUserFields(user: user) {
-                self.performSegue(withIdentifier: "fromEditToProduct", sender: nil)
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ProductViewController") as! ProductViewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                
+                UIApplication.shared.windows.first?.rootViewController = navigationController
+                UIApplication.shared.windows.first?.makeKeyAndVisible()
             }
         }
     }

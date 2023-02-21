@@ -26,6 +26,11 @@
 		0C8AF6C7296F116500E5B872 /* BasketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C6296F116500E5B872 /* BasketManager.swift */; };
 		0C8AF6C9296F11C200E5B872 /* BasketProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */; };
 		0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */; };
+		0C9107F429A4042600D14EA2 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9107F229A4042600D14EA2 /* OrderTableViewCell.swift */; };
+		0C9107F529A4042600D14EA2 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9107F329A4042600D14EA2 /* OrderTableViewCell.xib */; };
+		0C9107FA29A4092B00D14EA2 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9107F929A4092B00D14EA2 /* OrderViewController.swift */; };
+		0C9107FD29A40BD400D14EA2 /* OrderProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9107FB29A40BD400D14EA2 /* OrderProductsTableViewCell.swift */; };
+		0C9107FE29A40BD400D14EA2 /* OrderProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9107FC29A40BD400D14EA2 /* OrderProductsTableViewCell.xib */; };
 		0CA1DA3429890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3229890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.swift */; };
 		0CA1DA3529890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3329890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.xib */; };
 		0CA1DA3D2989248D005DBA23 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */; };
@@ -37,6 +42,7 @@
 		0CA1DA4A29894BEE005DBA23 /* OrderTotalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1DA4829894BEE005DBA23 /* OrderTotalTableViewCell.xib */; };
 		0CAAD6AC2976926A00536B91 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAAD6AB2976926A00536B91 /* FileManager.swift */; };
 		0CAE9BDA297A79F8000DF23D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE9BD9297A79F8000DF23D /* ProfileViewController.swift */; };
+		0CBB395F29A4562B001ECCE6 /* DateHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 0CBB395E29A4562B001ECCE6 /* DateHelper */; };
 		0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A12965B9CF000D379A /* AppDelegate.swift */; };
 		0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A32965B9CF000D379A /* SceneDelegate.swift */; };
 		0CCDD3A62965B9CF000D379A /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCDD3A52965B9CF000D379A /* PhoneNumberViewController.swift */; };
@@ -74,6 +80,11 @@
 		0C8AF6C6296F116500E5B872 /* BasketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketManager.swift; sourceTree = "<group>"; };
 		0C8AF6C8296F11C200E5B872 /* BasketProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketProduct.swift; sourceTree = "<group>"; };
 		0C8AF6CA296F120A00E5B872 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		0C9107F229A4042600D14EA2 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		0C9107F329A4042600D14EA2 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		0C9107F929A4092B00D14EA2 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		0C9107FB29A40BD400D14EA2 /* OrderProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProductsTableViewCell.swift; sourceTree = "<group>"; };
+		0C9107FC29A40BD400D14EA2 /* OrderProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderProductsTableViewCell.xib; sourceTree = "<group>"; };
 		0CA1DA3229890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAndDeliveryTableViewCell.swift; sourceTree = "<group>"; };
 		0CA1DA3329890DC1005DBA23 /* PaymentAndDeliveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentAndDeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBB395F29A4562B001ECCE6 /* DateHelper in Frameworks */,
 				13B474935D6CC7679C030267 /* Pods_FontaineShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +164,7 @@
 				0CA1DA3C2989248D005DBA23 /* DeliveryViewController.swift */,
 				0C2B27D7299EA93A0099F978 /* FondyViewController.swift */,
 				0CEAA00A299EFAD500CB45BC /* PreviousOrdersViewController.swift */,
+				0C9107F929A4092B00D14EA2 /* OrderViewController.swift */,
 			);
 			path = ViewCotrollers;
 			sourceTree = "<group>";
@@ -177,6 +190,10 @@
 				0CE4C5FD29986BF300EDDF0D /* PaymentMethodTableViewCell.xib */,
 				0CF216EB299FB8F70007271F /* PreviousOrdersTableViewCell.swift */,
 				0CF216EC299FB8F70007271F /* PreviousOrdersTableViewCell.xib */,
+				0C9107F229A4042600D14EA2 /* OrderTableViewCell.swift */,
+				0C9107F329A4042600D14EA2 /* OrderTableViewCell.xib */,
+				0C9107FB29A40BD400D14EA2 /* OrderProductsTableViewCell.swift */,
+				0C9107FC29A40BD400D14EA2 /* OrderProductsTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -252,6 +269,9 @@
 			dependencies = (
 			);
 			name = FontaineShop;
+			packageProductDependencies = (
+				0CBB395E29A4562B001ECCE6 /* DateHelper */,
+			);
 			productName = FontaineShop;
 			productReference = 0CCDD39E2965B9CF000D379A /* FontaineShop.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 0CCDD3952965B9CF000D379A;
+			packageReferences = (
+				0CBB395D29A4562B001ECCE6 /* XCRemoteSwiftPackageReference "DateHelper" */,
+			);
 			productRefGroup = 0CCDD39F2965B9CF000D379A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,11 +324,13 @@
 				0CE4C5FF29986BF300EDDF0D /* PaymentMethodTableViewCell.xib in Resources */,
 				0CA1DA3529890DC2005DBA23 /* PaymentAndDeliveryTableViewCell.xib in Resources */,
 				0CA1DA4529894BB4005DBA23 /* SwitcherTableViewCell.xib in Resources */,
+				0C9107FE29A40BD400D14EA2 /* OrderProductsTableViewCell.xib in Resources */,
 				0CA1DA4A29894BEE005DBA23 /* OrderTotalTableViewCell.xib in Resources */,
 				0C8AF6C5296F0F3800E5B872 /* BasketTableViewCell.xib in Resources */,
 				0CCDD3AB2965B9D2000D379A /* Assets.xcassets in Resources */,
 				0CCDD3A92965B9CF000D379A /* Main.storyboard in Resources */,
 				0CF216EE299FB8F70007271F /* PreviousOrdersTableViewCell.xib in Resources */,
+				0C9107F529A4042600D14EA2 /* OrderTableViewCell.xib in Resources */,
 				0CA1DA4129894B96005DBA23 /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +399,7 @@
 				0CA1DA4929894BEE005DBA23 /* OrderTotalTableViewCell.swift in Sources */,
 				0C8AF6BF296F094100E5B872 /* ProductViewController.swift in Sources */,
 				0C359A102968580F0047939C /* UserManager.swift in Sources */,
+				0C9107FA29A4092B00D14EA2 /* OrderViewController.swift in Sources */,
 				0CA1DA4029894B96005DBA23 /* TextFieldTableViewCell.swift in Sources */,
 				0C8AF6C1296F0CD200E5B872 /* Product.swift in Sources */,
 				0CCDD3A22965B9CF000D379A /* AppDelegate.swift in Sources */,
@@ -388,6 +414,8 @@
 				0C2B27D6299E576C0099F978 /* OrderManager.swift in Sources */,
 				0C8AF6CB296F120A00E5B872 /* BasketViewController.swift in Sources */,
 				0CEAA00B299EFAD500CB45BC /* PreviousOrdersViewController.swift in Sources */,
+				0C9107FD29A40BD400D14EA2 /* OrderProductsTableViewCell.swift in Sources */,
+				0C9107F429A4042600D14EA2 /* OrderTableViewCell.swift in Sources */,
 				0CCDD3A42965B9CF000D379A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +636,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CBB395D29A4562B001ECCE6 /* XCRemoteSwiftPackageReference "DateHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/melvitax/DateHelper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CBB395E29A4562B001ECCE6 /* DateHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CBB395D29A4562B001ECCE6 /* XCRemoteSwiftPackageReference "DateHelper" */;
+			productName = DateHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0CCDD3962965B9CF000D379A /* Project object */;
 }
